@@ -184,7 +184,7 @@ with open(outputFileName, "w", encoding='utf-8') as file:
 
 # print("Data saved to", outputFileName)
 df = pd.DataFrame(cardData)
-df.to_csv('scrapedData.xlsx', index=False)
+df.to_csv('scrapedData.csv', index=False)
 
 # Release the resources allocated by Selenium and shut down the browser
 print("Close browser")
