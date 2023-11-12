@@ -92,7 +92,7 @@ def scrapData(indexPage):
                             By.XPATH, "./div/a/div/img")
                         imgSource = imagePath.get_attribute("src")
 
-                        info["nameColor-"+str(indexColor)] = nameColor
+                        info["name-color-"+str(indexColor)] = nameColor
                         info["image-"+str(indexColor)] = imgSource
 
                     except Exception as e:
@@ -113,8 +113,8 @@ def scrapData(indexPage):
                         By.XPATH, "./div/a/div/img")
                     imgSource = imagePath.get_attribute("src")
 
-                    info["nameColor"+str(1)] = nameColor
-                    info["image-"+str(1)] = imgSource
+                    info["name-color-"+str(0)] = nameColor
+                    info["image-"+str(0)] = imgSource
 
                 except Exception as e:
                     print(f"Error processing image: {e}")
